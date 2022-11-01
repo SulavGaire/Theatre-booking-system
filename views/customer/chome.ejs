@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="headers.css" rel="stylesheet" />
+  <title>customer homepage</title>
+</head>
+<body class="bg-secondary">
+      <input type="hidden" value="<%-uid %> " id="uid" name="uid" required><br>
+    <main>
+      <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><%-uid %> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="/customer/booking/<%-uid %> ">BOOKING</a>
+                </li>
+              </ul>
+              <div class="text-end">
+                <a href="logout">
+                  <button type="button" class="btn btn-outline-light me-2">
+                    logout
+                  </button></a> 
+             </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container py-5 h-100">
+        <div class="album py-5 bg-secondary">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                      <img src="front/op.jpg" class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                      aria-label="Placeholder: Thumbnail"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false"
+                      alt="AAA"
+                      />
+                      <title>Placeholder</title>
+                      <rect width="100%" height="100%" fill="#55595c" />
+                      <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                        AAA
+                      </text>
+                      <div class="card-body">
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural
+                          lead-in to additional content. This content is a little bit
+                          longer.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                          <a href="/customer/booking/<%-uid %> "><button type="button" class="btn btn-outline-secondary me-2">
+                          Book Now
+                          </button></a>
+                          <small class="text-muted">2 hrs+</small>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                      <img src="front/2.jpg" class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                      aria-label="Placeholder: Thumbnail"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false"
+                      alt="BBB"
+                      />
+                      <title>Placeholder</title>
+                      <rect width="100%" height="100%" fill="#55595c" />
+                      <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                        BBB
+                      </text>
+                      <div class="card-body">
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural
+                          lead-in to additional content. This content is a little bit
+                          longer.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                           <a href="/customer/booking/<%-uid %> "><button type="button" class="btn btn-outline-secondary me-2">
+                          Book Now
+                        </button></a>
+                          <small class="text-muted">2 hrs+</small>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                      <img src="front/3.jpg" class="bd-placeholder-img card-img-top"
+                      width="100%"
+                      height="225"
+                      aria-label="Placeholder: Thumbnail"
+                      preserveAspectRatio="xMidYMid slice"
+                      focusable="false"alt="CCC"
+                      />
+                      <title>Placeholder</title>
+                      <rect width="100%" height="100%"/>
+                      <text x="50%" y="50%" dy=".3em">
+                        CCC
+                      </text>
+                      <div class="card-body">
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a natural
+                          lead-in to additional content. This content is a little bit
+                          longer.
+                        </p>
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
+                        <a href="/customer/booking/<%-uid %> "><button type="button" class="btn btn-outline-secondary me-2">
+                          Book Now
+                        </button></a>
+                          <small class="text-muted">2 hrs+</small>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+</body>
+</html>
